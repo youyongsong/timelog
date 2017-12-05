@@ -15,3 +15,6 @@ RUN pip3 install -U pip \
     && pip install -r requirements/dev.txt
 
 WORKDIR /app
+CMD python manage.py runserver 0.0.0.0:8080
+
+COPY ./timelog /app
