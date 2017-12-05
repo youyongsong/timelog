@@ -1,0 +1,9 @@
+version: "3"
+services:
+  timelog:
+    image: youyongsong/timelog:dev
+    container_name: timelog
+    ports:
+      - "10001:8080"
+    volumes:
+      - /var/timelog/timelog.db:/app/db.sqlite3
